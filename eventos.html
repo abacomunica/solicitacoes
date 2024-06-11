@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style/principal.css">
+    <link rel="shortcut icon" href="img/icone-comunica.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <header class="cabecalho" style="margin-bottom: 30px;">
+        <h1>EVENTOS</h1>
+    </header>
+
+    <main class="container">
+        <form method="post" id="form">
+            <div class="text-input">
+                <label for="Nm">Nome</label> <br>
+                <input type="text" name="Nome" id="Nm" required>
+            </div>
+
+            <div class="text-input">
+                <label for="dp">Departamento</label> <br>
+                <input type="text" name="Departamento" id="dp" required>
+            </div>
+
+            <div class="text-input">
+                <label for="pr">Nome do Evento</label> <br>
+                <input type="text" name="Projeto" id="pr" required>
+            </div>
+
+            <div class="text-input">
+                <label for="data">Data do evento</label> <br>
+                <input type="text" name="Data" id="data" required>
+            </div>
+
+            <div class="text-input">
+                <label for="texto-area">Descrição do que você deseja</label>
+                <textarea name="Descrição" id="texto-area" style="height: 150px; padding: 10px;" required></textarea>
+            </div>
+
+            <div class="botao"><button class="button" type="submit">Enviar</button></div>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

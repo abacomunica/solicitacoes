@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbaComunica</title>
+    <link rel="icon" href="img/icone-comunica.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style/principal.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="img/icone-comunica.jpg">
+</head>
+<body>
+    <header class="cabecalho" style="margin-bottom: 5em;">
+        <h1>SOLICITAÇÕES</h1>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <p><a href="video.html">VIDEO</a></p>
+        </div>
+
+        <div class="card">
+            <p><a href="artes.html">ARTE</a></p>
+        </div>
+
+        <div class="card">
+            <p><a href="eventos.html">EVENTOS</a></p>
+        </div>
+
+        <div class="card">
+            <p><a href="outros.html">OUTROS</a></p>
+        </div>
+
+        <div class="texto">
+            <p><b>Este aplicativo tem por objetivo atender as demandas de serviços de criação de arte e vídeos.</b></p> <br>
+            <p>Organize seus eventos <b>pelo menos 45 dias</b> antes deles acontecerem. Como temos outras demandas, <b>pedimos 15 dias</b> para confeccionar as artes e propagandas. <b>Assim nossa equipe poderá ter tempo para fazer a sua solicitação com maior excelência.</b> </p>
+        </div> 
+
+        
+    </main>
+
+    <footer>
+        <img src="img/logo2.png" alt="" class="logo">
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+          .then(function(registration) {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch(function(error) {
+            console.log('Falha ao registrar o Service Worker:', error);
+          });
+        }
+      </script>
+</body>
+
+</html>
